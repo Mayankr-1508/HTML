@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM</title>
+    <title>HTML-FORM</title>
 </head>
+
 <body>
     <div>
-        <h1>Trip Package Planner</h1>
-        <div>
+        <h1>Travel Form for trip</h1>
         <form action="form.php">
-        <input type="text"placeholder="Enter Your Name">
-        <br>
-        <label for="sectionida">
-            <input type="radio" value="section a" name ="section" id="sectionida">Section A
-        </label>
-        <label for="sectionidb">
-            <input type="radio" value="section b" name ="section" id="sectionidb">Section B
-        </label>
-        <label for="sectionidc">
-            <input type="radio" value="section c" name ="section" id="sectionidc">Section C
-        </label>
-        <br>
-        <input type="checkbox">
-        
+            <input type="text" placeholder="Enter Your Name">
+            <br>
+            <label for="sectionida">
+                <input type="radio" name="section" value="Section A" id="sectionida">Section A
+            </label>
+            <label for="sectionidb">
+                <input type="radio" name="section" value="Section B" id="sectionida">Section B
+            </label>
+            <label for="sectionidc">
+                <input type="radio" name="section" value="Section C" id="sectionida" class="red blue">Section C
+            </label>
+            <br>
+            <p>Choose your Food</p>
+            <input type="checkbox" name="Breakfast" id="Breakfast">
+            <label for="Breakfast">Breakfast</label>
+            <input type="checkbox" name="Lunch" id="Lunch">
+            <label for="Lunch">Lunch</label>
+            <input type="checkbox" name="Dinner" id="Dinner">
+            <label for="Breakfast">Dinner</label>
+            <br>
+            <textarea name="Explain" id="Explain" cols="30" rows="10"
+                placeholder="Explain why you want to go for Picnic"></textarea>
+            <br>
+            <select name="Food" id="Food">
+                <option value="No Food">No Food</option>
+                <option value="Veg">Veg</option>
+                <option value="Non-Veg">Non-Veg</option>
+                <option value="Jain Food">Jain Food</option>
+            </select>Select your Food Type
         </form>
-        </div>
     </div>
 </body>
+
 </html>
